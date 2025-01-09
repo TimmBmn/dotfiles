@@ -6,7 +6,7 @@ git & stow installed on your system
 Clone this Repository into your home directory ("~")
 
 ```
-git clone git@github.com/timmbmn/dotfiles.git ~/dotfiles
+git clone git@github.com:TimmBmn/dotfiles.git ~/dotfiles
 ```
 
 then navigate to the directory
