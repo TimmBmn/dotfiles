@@ -1,6 +1,3 @@
-[user]
-	name = Tim Baumann
-	email = TimmBmn@gmail.com
 [core]
 	editor = nvim
 [init]
