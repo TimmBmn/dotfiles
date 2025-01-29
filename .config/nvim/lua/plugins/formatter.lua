@@ -6,7 +6,9 @@ return {
         },
         formatters_by_ft = {
             lua = { "stylua" },
-            python = { "isort", "black" },
+            python = { "isort", "black", "rustywind" },
+            sql = { "sql_formatter" },
+            html = { "rustywind" }
         },
     },
     config = function(_, opts)
