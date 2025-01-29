@@ -8,6 +8,14 @@ else
 fi
 
 
+if command -v fzf &> /dev/null; then
+    eval "$(fzf --bash)"
+    # Open in tmux popup if on tmux, otherwise use --height mode
+    export FZF_DEFAULT_OPTS='--height 40% --layout reverse --border'
+else
+    echo "fzf is not installed"
+fi
+
 alias python=python3
 
 # for fast config editing
