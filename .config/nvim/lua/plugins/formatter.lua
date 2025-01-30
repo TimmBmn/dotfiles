@@ -8,7 +8,8 @@ return {
             lua = { "stylua" },
             python = { "isort", "black", "rustywind" },
             sql = { "sql_formatter" },
-            html = { "rustywind" }
+            html = { "rustywind" },
+            htmldjango = { "rustywind" }
         },
     },
     config = function(_, opts)
