@@ -23,10 +23,16 @@ return {
                 },
                 -- TODO decide if you like that
                 -- the next 4 lines would change the way telescope displays each result.
-                -- path_display = function(_, path)
-                --     local tail = require("telescope.utils").path_tail(path)
-                --     return string.format("%s (%s)", tail, path)
-                -- end,
+                path_display = function(_, path)
+                    local tail = require("telescope.utils").path_tail(path)
+
+                    local patha = string.sub(path, 0, string.len(path) - string.len(tail))
+                    if string.len(patha) <= 0 then
+                        return tail
+                    else
+                        return string.format("%s | %s", tail, patha)
+                    end
+                end,
             },
             pickers = {
                 find_files = {
