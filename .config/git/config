@@ -9,6 +9,15 @@
 [commit]
     template = ~/.config/git/template
 
+[status]
+    branch = true
+    showStash = true
+    showUntrackedFiles = all  # show individual untracked files
+
+[log]
+    abbrevCommit = true  # short commits
+    graphColors = blue,yellow,cyan,magenta,green,red
+
 [init]
     defaultBranch = main
 

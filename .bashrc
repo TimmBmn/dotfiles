@@ -30,8 +30,10 @@ alias andi="ping 8.8.8.8"
 
 # git aliases
 alias gs="git status"
+alias gss="git status -s"
 alias ga="git add"
 alias gap="git add --patch"
 alias gd="git diff"
 alias gds="git diff --staged"
+alias gl="git log --graph --all --pretty=format:'%C(blue)%h %C(white) %an  %ar%C(green)  %D%n%s%n'"
 
