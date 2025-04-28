@@ -1,13 +1,14 @@
 # vim mode
 set -o vi
 
+# starship init
 if command -v starship &> /dev/null; then
     eval "$(starship init bash)"
 else
     echo "install starship for pretty commandline"
 fi
 
-
+# fzf init
 if command -v fzf &> /dev/null; then
     eval "$(fzf --bash)"
     # Open in tmux popup if on tmux, otherwise use --height mode
