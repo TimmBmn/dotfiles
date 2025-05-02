@@ -9,7 +9,7 @@ return {
             python = { "isort", "black", "rustywind" },
             sql = { "sql_formatter" },
             html = { "rustywind" },
-            htmldjango = { "rustywind" }
+            htmldjango = { "rustywind" },
         },
     },
     config = function(_, opts)
