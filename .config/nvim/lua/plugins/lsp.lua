@@ -67,23 +67,6 @@ return {
             },
         },
         config = function()
-            local lspconfig = require("lspconfig")
-            local mason_lspconfig = require("mason-lspconfig")
-            local cmp_nvim_lsp = require("cmp_nvim_lsp")
-
-            local capabilities = vim.tbl_deep_extend('force',
-                vim.lsp.protocol.make_client_capabilities(),
-                cmp_nvim_lsp.default_capabilities())
-
-            mason_lspconfig.setup_handlers({
-                -- default handler for installed servers
-                function(server_name)
-                    lspconfig[server_name].setup({
-                        capabilities = capabilities
-                    })
-                end,
-            })
-
             -- TODO figure out if you like it with the normal functions or if you want to use telescope
             vim.api.nvim_create_autocmd("LspAttach", {
                 callback = function(buffer)
