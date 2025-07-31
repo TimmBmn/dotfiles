@@ -36,4 +36,5 @@ alias gap="git add --patch"
 alias gd="git diff"
 alias gds="git diff --staged"
 alias gl="git log --graph --all --pretty=format:'%C(blue)%h %C(white) %an  %ar%C(green)  %D%n%s%n'"
+alias gc="git commit"
 
