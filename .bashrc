@@ -1,6 +1,15 @@
 # vim mode
 set -o vi
 
+# set sudoedit editor
+if command -v neovim &> /dev/null; then
+    export EDITOR=nvim
+elif command -v vim &> /dev/null; then
+    export EDITOR=vim
+elif command -v vi &> /dev/null; then
+    export EDITOR=vi
+fi
+
 # starship init
 if command -v starship &> /dev/null; then
     eval "$(starship init bash)"
