@@ -145,3 +145,7 @@ alias exi="exit"
 alias eixt="exit"
 alias ext="exit"
 alias eixtt="exit"
+
+convert_videos() {
+    for i in *; do ffmpeg -i "$i" -c:v libx264 -c:a aac -y "$i.mp4"; done
+}
