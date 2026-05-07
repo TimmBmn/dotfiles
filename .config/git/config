@@ -1,6 +1,6 @@
 [user]
     name = Tim Baumann
-    email = TimmBmn@gmail.com
+    email = timb.dev@tuta.com
 
 [core]
     editor = nvim
