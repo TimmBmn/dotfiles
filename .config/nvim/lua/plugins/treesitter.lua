@@ -12,8 +12,6 @@ return {
         additional_vim_regex_highlighting = false
     },
     init = function(opts)
-        print(opts)
-
         local ensureInstalled = {
             'lua', 'python', 'typescript', "html", "json", "htmldjango",
         }
