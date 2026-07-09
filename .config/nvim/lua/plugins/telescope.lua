@@ -2,7 +2,7 @@ return {
     { 'nvim-lua/plenary.nvim', lazy = true },
     {
         'nvim-telescope/telescope.nvim',
-        tag = '0.1.8',
+        -- tag = '0.1.8',
         -- TODO change how the pickers are displayed. I don't like the preview window only being like 2/6 of the screen.
         opts = {
             defaults = {
