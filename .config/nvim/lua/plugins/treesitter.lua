@@ -13,7 +13,7 @@ return {
     },
     init = function(opts)
         local ensureInstalled = {
-            'lua', 'python', 'typescript', "html", "json", "htmldjango",
+            'lua', 'python', 'typescript', "html", "json", "htmldjango", "bash", "yaml"
         }
         local alreadyInstalled = require('nvim-treesitter.config').get_installed()
         local parsersToInstall = vim.iter(ensureInstalled)
