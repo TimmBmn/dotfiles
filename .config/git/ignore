@@ -1,0 +1,5 @@
+# rockbox files
+/usrlocaltemp/
+/.cache/
+/compile_commands.json
+/set_path.sh
